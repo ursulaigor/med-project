@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-color: black;
+	background-image: linear-gradient(30deg,rgb(218, 102, 102), white,rgb(92, 145, 206));
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	margin: 0;
+}
+
+h1, h2, h3, nav a {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin-top: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.header-section{
+	background-image: url(../images/header.jpg);
+	background-position: center center;
+	height: 85px;
+	font-size: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: rgb(13, 13, 128);
+
+}
+
+nav {
+	background-color: rgb(207, 15, 15);
+	height: 42px;
+
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	flex: 1;
+}
+
+nav a {
+	display: block;
+	color:white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 42px;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+	background-color: rgba(255,255,255,0.3);
+}
+
+
+main {
+	padding: 0px;
+}
+.menu-home{
+	max-width: 60px;
+    padding: 5px;
+}
+
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+	background-color: rgb(252, 252, 253);
+}
+.banner-col-01 {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	padding :10px;
+	padding-top:40px;
+}
+
+.banner-col-02 {
+	width: 62%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-top: 30px;
+}
+
+
+
+
+.banner-col-02 article {
+	
+	border-width: 2px;
+	background-color: rgb(207, 15, 15);
+	margin: 10px 0px;
+	padding: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:white;
+	border-radius:  25px 25px  25px 25px;  
+	text-align:justify;
+}
+ 
+
+footer {
+	background-color:rgb(207, 15, 15) ;
+	padding: 20px;
+	text-align: center;
+	
+
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+@media (max-width:1024px){
+	.wrapper{
+		padding:0px;
+		width:100%;
+	}
+	.banner-col-01{
+		display:none;
+	}
+	.banner-col-02{
+		width:100%;
+		padding:0px;
+	}
+	.header-section {
+		font-size: 30px;
+		line-height:80px;
+	}
+}
+
+
+
+
+
